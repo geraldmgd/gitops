@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:   
-      -name:  
+      - name:  
         id: short_sha
-          run: |          
-            echo "sha_short=${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
+        run: |          
+          echo "sha_short=${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
 
-	    -name: interact with Github API
+	    - name: interact with Github API
 	      run: |
           curl --request POST \
           --url https://api.github.com/repos/${{ github.repository }}/issues \
