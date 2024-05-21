@@ -1,0 +1,9 @@
+name: Reusable Workflow
+on: 
+  workflow_dispatch:
+
+jobs:
+  run-npm-test:
+    uses: ./.github/workflows/ex4-reusable.yml
+    with:
+      node-version: 14
