@@ -8,10 +8,10 @@ jobs:
     steps: 
       - name: "Check out repository"
         uses: actions/checkout@v4
-      - name: Install Node.js
+      - name: "Install Node.js"
         uses: actions/setup-node@v4
           with:
             node-version 'lts/*'
-      - name: Install dépendance
+      - name: "Install dépendance"
         run: npm install
-        
+
