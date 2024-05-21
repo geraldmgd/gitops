@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:   
-      - name:  
+      - name: test
         id: short_sha
         run: |          
           echo "sha_short=${GITHUB_SHA::7}" >> $GITHUB_OUTPUT
